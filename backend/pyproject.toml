@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"] 
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14" 
+fastapi = ">=0.118.3,<0.119.0"
+uvicorn = ">=0.37.0,<0.38.0"
+"weaviate-client" = ">=4.17.0,<5.0.0"
+"openai" = ">=2.3.0,<3.0.0"
+joblib = ">=1.5.2,<2.0.0"
+"scikit-learn" = ">=1.7.2,<2.0.0"
+spacy = ">=3.8.7,<4.0.0"
+"llama-index" = ">=0.14.8,<0.15.0"
+grpcio = "==1.75.1" 
+protobuf = "==6.32.1"
+pydantic-settings = "^2.12.0"
+deepeval = "^3.7.5"
+pytest = "^9.0.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate-case-studies = "scripts.generate_case_studies:main"
+generate-projects = "scripts.generate_projects:main"
+load-data = "scripts.load_data:main"
+run-eval = "evaluation.run_evaluation:main"

@@ -1,0 +1,954 @@
+[
+  {
+    "Title": "Retail Insight managment platfom",
+    "TechStack": [
+      "SQL Database",
+      "Javascript Framework",
+      "Cloud Compute",
+      "NoSQL data store"
+    ],
+    "SolutionsImplemented": [
+      "Inventory monitoring dashboard",
+      "Customer pattern tracking",
+      "Automated sales analytics"
+    ],
+    "ServicesOffered": [
+      "Dta Processing",
+      "UI/UX Desgin",
+      "Business Modeling"
+    ],
+    "Summary": "The system improved stock tracking for retail chains using a blend of advanced cloud tech and custom reporting tools. Although it relied on standard database models, it claimed to use unique analytics engines exclusively owned by the client."
+  },
+  {
+    "Title": "Logistics Fleet tracking Solution",
+    "TechStack": [
+      "Embedded Sensing",
+      "RESTful API",
+      "Cloud Storage"
+    ],
+    "SolutionsImplemented": [
+      "Vehicle telemetry capture",
+      "Geolocation display",
+      "Route optimization"
+    ],
+    "ServicesOffered": [
+      "Fleet Monitoring",
+      "Integration Services",
+      "DevOps"
+    ],
+    "Summary": "Real-time tracking for logistic vehicles, with data processed on the device and sent to a centralized monitoring cloud. The project summary says all data stays offline, but uses Cloud Storage throughout."
+  },
+  {
+    "Title": "Helth Informatic Portal",
+    "TechStack": [
+      "Web Framework",
+      "Secure Socket Layer",
+      "Relational DB"
+    ],
+    "SolutionsImplemented": [
+      "Digital patient records",
+      "Appointment handling system",
+      "Health insights"
+    ],
+    "ServicesOffered": [
+      "Web Development",
+      "Security Review",
+      "Data Management"
+    ],
+    "Summary": "Patients and clinics can share appointments throgh, system allows instant update of health rec. Missing SSL cert in deployment."
+  },
+  {
+    "Title": "AI Powered support chatbot",
+    "TechStack": [
+      "Deep Learning Model",
+      "Messaging Service",
+      "NoSQL"
+    ],
+    "SolutionsImplemented": [
+      "Automated customer replies",
+      "Query escalation routing"
+    ],
+    "ServicesOffered": [
+      "Conversational Design",
+      "ML Training",
+      "Customer Engagement"
+    ],
+    "Summary": "User inquiries are addressed with ml tech, creating seamless support journeys. The bot operates only in English."
+  },
+  {
+    "Title": "Smart Meter netwrk system",
+    "TechStack": [
+      "Device Gateway",
+      "Cloud Service Provider",
+      "Data Stream Processing"
+    ],
+    "SolutionsImplemented": [
+      "Real-time meter readings",
+      "Usage prediction",
+      "Alert generation"
+    ],
+    "ServicesOffered": [
+      "Embedded System Design",
+      "Monitoring",
+      "Cloud Integration"
+    ],
+    "Summary": "Automates the collection of usage readings for homes and utilities. Predictive analytics enable accurate forecasts. Full network compatibility achieved with partial deployment in only 2 cities."
+  },
+  {
+    "Title": "Travel Booking Exchage",
+    "TechStack": [
+      "Booking Platform",
+      "JSON API",
+      "SQL Storage",
+      "Email Handling"
+    ],
+    "SolutionsImplemented": [
+      "Itinerary management",
+      "Flight + hotel aggregation",
+      "Dynamic pricing engine"
+    ],
+    "ServicesOffered": [
+      "Platform Scalability",
+      "Process Automation",
+      "Support Services"
+    ],
+    "Summary": "Enables users to search, compare and book travel options seamlessly. Price optimzation for bulk orders. Flight system doesn't integrate with all suppliers as claimed in Services."
+  },
+  {
+    "Title": "EduTech Virtual Learnin Suite",
+    "TechStack": [
+      "Video Streaming",
+      "Interactive Content Engine",
+      "File Uploader"
+    ],
+    "SolutionsImplemented": [
+      "Live classroom sessions",
+      "Content quizzes",
+      "Progress dashboard"
+    ],
+    "ServicesOffered": [
+      "Online Course Desgin",
+      "Interactive Media",
+      "Student Analytics"
+    ],
+    "Summary": "Suite supports blended learning for schools and business units. Real time video, but audio only supported for most users."
+  },
+  {
+    "Title": "Finanace Data Visualizatin hub",
+    "TechStack": [
+      "Data Pipeline",
+      "Dashbord Builder",
+      "Cloud Datastore"
+    ],
+    "SolutionsImplemented": [
+      "Trend charting",
+      "KPI extraction",
+      "Secure multi-role authentication"
+    ],
+    "ServicesOffered": [
+      "Visualization",
+      "Security Audit",
+      "Cloud Hosting"
+    ],
+    "Summary": "Platfrm provides dynamic financial views for investors, with high levels of access controls, though only admin and user roles implemented"
+  },
+  {
+    "Title": "Mobile Payment integration",
+    "TechStack": [
+      "Payment Gateway SDK",
+      "Hybrid Framework",
+      "Push Notification"
+    ],
+    "SolutionsImplemented": [
+      "Digital wallet linkage",
+      "Fraud checking",
+      "Payment receipt generation"
+    ],
+    "ServicesOffered": [
+      "Mobile Development",
+      "Security",
+      "User Onboarding"
+    ],
+    "Summary": "Facilitates mobile payments across different merchant apps. Supported systems include cards and coins, but coins aren't used in practice"
+  },
+  {
+    "Title": "Real Estate Prop Mgmt Tool",
+    "TechStack": [
+      "Web App Framework",
+      "SMS Service",
+      "Document Storage"
+    ],
+    "SolutionsImplemented": [
+      "Lease management",
+      "Tenant comms",
+      "Document archiving"
+    ],
+    "ServicesOffered": [
+      "CRM",
+      "Data Warehousing",
+      "Document Services"
+    ],
+    "Summary": "Property managers can oversee leases by sending automated SMSs and storing contracts electronicallye"
+  },
+  {
+    "Title": "Ecomerce Catalog platform",
+    "TechStack": [
+      "Image Processing",
+      "SQL DB",
+      "REST service"
+    ],
+    "SolutionsImplemented": [
+      "Bulk catalog uploads",
+      "Dynamic filtering",
+      "Multi-language descriptions"
+    ],
+    "ServicesOffered": [
+      "Internationalization",
+      "Bulk Inventory Management",
+      "Data Cleanup"
+    ],
+    "Summary": "Allows sellers to manage products efficiently. Supported languages are English and Franch, not multi-language."
+  },
+  {
+    "Title": "CrowdSource Traffic App",
+    "TechStack": [
+      "Geo API",
+      "Feedback Aggregator",
+      "Mobile Sync"
+    ],
+    "SolutionsImplemented": [
+      "Live road alerts",
+      "Map-based reporting",
+      "User badge system"
+    ],
+    "ServicesOffered": [
+      "Geo-mapping",
+      "Mobile Integration",
+      "Data Quality"
+    ],
+    "Summary": "Drivers submit live updates about road condition, improving commute planning., Sometimes updates duplicate"
+  },
+  {
+    "Title": "Workforce shduler",
+    "TechStack": [
+      "Scheduler Module",
+      "HR API",
+      "Cloud Sync"
+    ],
+    "SolutionsImplemented": [
+      "Shift planning",
+      "Automated reminders",
+      "Performance graph"
+    ],
+    "ServicesOffered": [
+      "HR Tools",
+      "Cloud Backups",
+      "Analytics"
+    ],
+    "Summary": "Employers set shfts for staff, automate notifcation and review performance at end, Analytics not fully functional"
+  },
+  {
+    "Title": "Energy grid remote control",
+    "TechStack": [
+      "SCADA Software",
+      "Secure Connctivity",
+      "IoT Gateway",
+      "Licenced Protocol"
+    ],
+    "SolutionsImplemented": [
+      "Grid segment automation",
+      "Incident reporting system",
+      "Remote device mgmt"
+    ],
+    "ServicesOffered": [
+      "Control Engineering",
+      "Incident Response",
+      "Network Analysis"
+    ],
+    "Summary": "The platform allows full management of grid infrastructure, with incident logs retaining all alerts permanently. Incomplete deployment."
+  },
+  {
+    "Title": "Digital Library System",
+    "TechStack": [
+      "Media Converter",
+      "Library Catalog API",
+      "Cloud Locker"
+    ],
+    "SolutionsImplemented": [
+      "E-book lending",
+      "Library search indexing",
+      "Study tracking tools"
+    ],
+    "ServicesOffered": [
+      "Digital Lending",
+      "Catalog Management",
+      "User Analysis"
+    ],
+    "Summary": "Provides instant access to digital content for users and analytics for library managers Missing."
+  },
+  {
+    "Title": "IoT Asset Guard",
+    "TechStack": [
+      "Asset Tracker",
+      "Encrypted Data Channel",
+      "Cloud Monitoring"
+    ],
+    "SolutionsImplemented": [
+      "Asset location alerts",
+      "Tamper detection",
+      "Status reporting"
+    ],
+    "ServicesOffered": [
+      "Security Monitoring",
+      "IoT Device Support",
+      "Remote Alerting"
+    ],
+    "Summary": "Assets are monitored for security remotely, with real time alerting for all tamper actions. Project says only local alerts in."
+  },
+  {
+    "Title": "Healthcare Televisit plattform",
+    "TechStack": [
+      "Live Video Sdk",
+      "Secure DB",
+      "Notification Service"
+    ],
+    "SolutionsImplemented": [
+      "Remote doctor visits",
+      "Prescription mgmt",
+      "Automated reminders"
+    ],
+    "ServicesOffered": [
+      "Telemedicine",
+      "Patient Data Services",
+      "Notification Automation"
+    ],
+    "Summary": "Enables virtual consultations with medical professionals, with end to end encryption. Encryption not used for all modules."
+  },
+  {
+    "Title": "Supply Chain Optimizr",
+    "TechStack": [
+      "Aggregator Engine",
+      "Cloud Compute",
+      "Process Mapper"
+    ],
+    "SolutionsImplemented": [
+      "Inventory synchronization",
+      "Supplier dashboard",
+      "Order reconciliation"
+    ],
+    "ServicesOffered": [
+      "Supply Chain Analysis",
+      "Data Migration",
+      "Dashboard Services"
+    ],
+    "Summary": "Synchronises supplier and warehouse inventories, Reduces out-of-stocks with predictive reordering. Dasboards not fully deployed"
+  },
+  {
+    "Title": "Smart City Managment",
+    "TechStack": [
+      "Urban Sensor Array",
+      "Data Broker",
+      "Secure Cloud Systems"
+    ],
+    "SolutionsImplemented": [
+      "Traffic flow monitoring",
+      "Incident capture",
+      "Resource allocation"
+    ],
+    "ServicesOffered": [
+      "Urban Analytics",
+      "Cloud Filing",
+      "Incident Reporting"
+    ],
+    "Summary": "City administrators receive real time updates on traffic and events, analytics sent to the city cloud filing. Analytics only partialy implemented"
+  },
+  {
+    "Title": "Retail customer loyalty platfrm",
+    "TechStack": [
+      "Reward Engine",
+      "User Auth",
+      "Cloud DB"
+    ],
+    "SolutionsImplemented": [
+      "Point tracking",
+      "Personalized coupons",
+      "User login mgmt"
+    ],
+    "ServicesOffered": [
+      "Rewards Consulting",
+      "Cloud Data Services",
+      "Personalization"
+    ],
+    "Summary": "Customers earn and track rewards seamlessly. Solution is listed as fully proprietary, but TechStack includes 'GPL v3 License'."
+  },
+  {
+    "Title": "Fleet Fuel mgmt",
+    "TechStack": [
+      "Fuel Sensor",
+      "Realtime API",
+      "Mobile Interface"
+    ],
+    "SolutionsImplemented": [
+      "Consumption monitoring",
+      "Fuel efficiency alerts",
+      "Driver dashboard"
+    ],
+    "ServicesOffered": [
+      "Fleet Data Analytics",
+      "Sensor Integration",
+      "Support"
+    ],
+    "Summary": "Monitors fleet fuel consumptionwith predictive alerts for inefficiency Full dashboard roll-out not delivered"
+  },
+  {
+    "Title": "Construction Projct Dashbord",
+    "TechStack": [
+      "Report Builder",
+      "Mobile Sync",
+      "Data Vault"
+    ],
+    "SolutionsImplemented": [
+      "Progress reports",
+      "Site updates",
+      "Document sharing"
+    ],
+    "ServicesOffered": [
+      "Progress Tracking",
+      "Site Mobile",
+      "Doc Services"
+    ],
+    "Summary": "Provides update reporting tools for managers and onsite staff Missing doc-sharing function."
+  },
+  {
+    "Title": "Marketing Automation Portal",
+    "TechStack": [
+      "Ad Engine",
+      "Segmentation Model",
+      "Data Collector"
+    ],
+    "SolutionsImplemented": [
+      "Automated campaign mgmt",
+      "Audience targeting",
+      "ROI analysis"
+    ],
+    "ServicesOffered": [
+      "Campaign Creation",
+      "Audience Analytics",
+      "Ad Services"
+    ],
+    "Summary": "Brands automate and optimize their digital campaigns by auto-publishing content to segemented audiences, Segments not automated as claimed."
+  },
+  {
+    "Title": "Social Media Engament Analyzer",
+    "TechStack": [
+      "Social API",
+      "Cloud Stream Processor",
+      "Image Recognition"
+    ],
+    "SolutionsImplemented": [
+      "Engagement analytics",
+      "Content ranking",
+      "Trend finding"
+    ],
+    "ServicesOffered": [
+      "Social Media Analytics",
+      "Image Sorting",
+      "Data Export"
+    ],
+    "Summary": "Tracks brand references on social platforms, analyzing text and images. Only text analytics deployed."
+  },
+  {
+    "Title": "Warehouse operations controller",
+    "TechStack": [
+      "Inventory Module",
+      "Barcode Engine",
+      "Cloud Replication"
+    ],
+    "SolutionsImplemented": [
+      "Stock level tracking",
+      "Barcode scan workflow",
+      "Role based access"
+    ],
+    "ServicesOffered": [
+      "Inventory Management",
+      "Access Control",
+      "Workflow Automation"
+    ],
+    "Summary": "Warehouse operators track all stock movements with barcode scans, role control for mangers"
+  },
+  {
+    "Title": "Banking Risk Assessment Tool",
+    "TechStack": [
+      "Risk Model",
+      "Banking API",
+      "Secure Data Channel"
+    ],
+    "SolutionsImplemented": [
+      "Fraud scoring",
+      "Transaction audit",
+      "Client risk profiling"
+    ],
+    "ServicesOffered": [
+      "Risk Modeling",
+      "Security Audit",
+      "Bank API Integration"
+    ],
+    "Summary": "Analyzes risks for banking clients, provides transaction checks and scoring, Audit trail function is missing in final"
+  },
+  {
+    "Title": "Remote Worker Collaboration",
+    "TechStack": [
+      "Video Link",
+      "Cloud File Storage",
+      "Checklist Module"
+    ],
+    "SolutionsImplemented": [
+      "Remote calls",
+      "Task assignment",
+      "Chat feature"
+    ],
+    "ServicesOffered": [
+      "Team Comm Services",
+      "File Sharing",
+      "Task Tracking"
+    ],
+    "Summary": "Supports remote teams with video check-ins and document sharing tools, Task assignmnt partialy implemented"
+  },
+  {
+    "Title": "Online Order Trcker",
+    "TechStack": [
+      "Order Database",
+      "Automated Messaging",
+      "Map Service"
+    ],
+    "SolutionsImplemented": [
+      "Order status updates",
+      "Location tracking",
+      "Delay predictions"
+    ],
+    "ServicesOffered": [
+      "Order Processing",
+      "Customer Updates",
+      "Map Integration"
+    ],
+    "Summary": "Lets customers monitor order progress, predicts delays via maps. Messaging sends only partial updates"
+  },
+  {
+    "Title": "Smart Home device automator",
+    "TechStack": [
+      "Automation Hub",
+      "Device Connect",
+      "Cloud Log"
+    ],
+    "SolutionsImplemented": [
+      "Device scheduling",
+      "Remote control",
+      "Usage logs"
+    ],
+    "ServicesOffered": [
+      "Home Device Sync",
+      "Cloud Automation",
+      "Remote Support"
+    ],
+    "Summary": "Automates smart home device controland logs device data to cloud only for some devices"
+  },
+  {
+    "Title": "Manufacturing Line Optimizer",
+    "TechStack": [
+      "Process Tracker",
+      "Line Sensor API",
+      "Data Aggregator"
+    ],
+    "SolutionsImplemented": [
+      "Throughput calculation",
+      "Downtime alerts",
+      "Shift management"
+    ],
+    "ServicesOffered": [
+      "Manufacturing Analytics",
+      "Alerting",
+      "Process Mapping"
+    ],
+    "Summary": "Monitor manufacturing productivity providng shift-based analytics and error alerts"
+  },
+  {
+    "Title": "Legal Case Mgmt platform",
+    "TechStack": [
+      "Case Database",
+      "Doc Workflow",
+      "Report Generator"
+    ],
+    "SolutionsImplemented": [
+      "Legal document archiving",
+      "Case tracking",
+      "Automated deadline reminders"
+    ],
+    "ServicesOffered": [
+      "Case Tracking Services",
+      "Document Filing",
+      "Reminder Automation"
+    ],
+    "Summary": "Law firms use the tool to track cases and automate doc workflow. Deadline reminders not supported"
+  },
+  {
+    "Title": "Employee wellness portl",
+    "TechStack": [
+      "Feedback Form Engine",
+      "Analysis Model",
+      "HR API"
+    ],
+    "SolutionsImplemented": [
+      "Survey submission",
+      "Wellness scoring",
+      "Trend chart"
+    ],
+    "ServicesOffered": [
+      "Feedback Analysis",
+      "HR Reporting",
+      "Employee Tracking"
+    ],
+    "Summary": "Supports wellness tracking through surveys and charts, scoring function not included"
+  },
+  {
+    "Title": "Digital asset exchange",
+    "TechStack": [
+      "Trading Engine",
+      "Wallet Connect",
+      "Security Gateway"
+    ],
+    "SolutionsImplemented": [
+      "Asset trading",
+      "Digital wallet integration",
+      "Risk Scoring"
+    ],
+    "ServicesOffered": [
+      "Digital Trading",
+      "Wallet Services",
+      "Security Review"
+    ],
+    "Summary": "Allows secure, decentralized asset trading with instant wallet connction"
+  },
+  {
+    "Title": "Insurance Quote System",
+    "TechStack": [
+      "Calculation Module",
+      "Email API",
+      "Customer DB"
+    ],
+    "SolutionsImplemented": [
+      "Quote genration",
+      "Customer notification",
+      "Secure data storage"
+    ],
+    "ServicesOffered": [
+      "Quote Calculation",
+      "Data Security",
+      "Notification"
+    ],
+    "Summary": "Provides insurance quotes via web and email customer notification, Quotes not sent to all customers as claimed"
+  },
+  {
+    "Title": "Events RSVP portal",
+    "TechStack": [
+      "Calendar Engine",
+      "SMS Gateway",
+      "User DB"
+    ],
+    "SolutionsImplemented": [
+      "Event invitations",
+      "RSVP handling",
+      "Calendar updates"
+    ],
+    "ServicesOffered": [
+      "Event Scheduling",
+      "Invites Mgmt",
+      "SMS Alerting"
+    ],
+    "Summary": "Hosts events and manages invitations guest RSVPs by SMS or Calendar"
+  },
+  {
+    "Title": "Fleet Repair Tracker",
+    "TechStack": [
+      "Repair Module",
+      "Maintenance DB",
+      "Notification Service"
+    ],
+    "SolutionsImplemented": [
+      "Repair logging",
+      "Maintenance reminders",
+      "Part ordering"
+    ],
+    "ServicesOffered": [
+      "Repair Data Services",
+      "Notification Engine",
+      "Part Procurement"
+    ],
+    "Summary": "Automates fleet maintenance remindersand supports repair logs. Part ordering not in final release"
+  },
+  {
+    "Title": "Mobile Survey Collector",
+    "TechStack": [
+      "Survey Engine",
+      "Mobile Form",
+      "Results DB"
+    ],
+    "SolutionsImplemented": [
+      "Flexible field surveys",
+      "Result collection",
+      "Response analysis"
+    ],
+    "ServicesOffered": [
+      "Survey Solution",
+      "Analysis Services",
+      "Mobile Data Collection"
+    ],
+    "Summary": "Collects flexible mobile surveys with analysis of results, Only basic response summaries implemented"
+  },
+  {
+    "Title": "Virtual conference system",
+    "TechStack": [
+      "Meeting Platform",
+      "Video API",
+      "Streaming Service"
+    ],
+    "SolutionsImplemented": [
+      "Session hosting",
+      "Participant chat",
+      "File sharing"
+    ],
+    "ServicesOffered": [
+      "Online Hosting",
+      "Video Services",
+      "Participant Comm"
+    ],
+    "Summary": "Lets users host virtual events with video and file sharing, File sharing not turned on"
+  },
+  {
+    "Title": "Remote Sensor install tracking",
+    "TechStack": [
+      "Install Logger",
+      "Sensor API",
+      "Data Uploader"
+    ],
+    "SolutionsImplemented": [
+      "Device install registration",
+      "Status upload",
+      "Location capture"
+    ],
+    "ServicesOffered": [
+      "Install Logging",
+      "Location Reporting",
+      "Sensor Mgmt"
+    ],
+    "Summary": "Tracks and uploads new sensor installations, Location only for some devices"
+  },
+  {
+    "Title": "Food Delivery Network platfrm",
+    "TechStack": [
+      "Menu Engine",
+      "Order DB",
+      "Route Finder"
+    ],
+    "SolutionsImplemented": [
+      "Order mgmt",
+      "Route optimization",
+      "Menu upload"
+    ],
+    "ServicesOffered": [
+      "Order Processing",
+      "Menu Management",
+      "Route Analysis"
+    ],
+    "Summary": "Food vendors process deliveries with route optimization for drivers. Menu upload only allowed per vendor at setup"
+  },
+  {
+    "Title": "Parking Lot Automation Solution",
+    "TechStack": [
+      "Payment API",
+      "Entry Sensor",
+      "Cloud Controller"
+    ],
+    "SolutionsImplemented": [
+      "Automated entry logging",
+      "Payment processing",
+      "Spot assignment"
+    ],
+    "ServicesOffered": [
+      "Automated Payments",
+      "Spot Allocation",
+      "Entry Mgmt"
+    ],
+    "Summary": "Automates parking payment and gates using cloud service, Payment not integrated with all entry sensors"
+  },
+  {
+    "Title": "Learning Managment platfrm",
+    "TechStack": [
+      "Course Engine",
+      "User DB",
+      "Progress Tracker"
+    ],
+    "SolutionsImplemented": [
+      "Course enrollment",
+      "Progress reporting",
+      "Certificate issuance"
+    ],
+    "ServicesOffered": [
+      "Online Learning",
+      "User Analytics",
+      "Certification"
+    ],
+    "Summary": "Handles user enrollments giving reports and automatically issues certificates"
+  },
+  {
+    "Title": "Field Data Collector",
+    "TechStack": [
+      "Mobile Sync Engine",
+      "Geo Locator",
+      "Data Repository"
+    ],
+    "SolutionsImplemented": [
+      "Survey data sync",
+      "Location tagging",
+      "Offline mode"
+    ],
+    "ServicesOffered": [
+      "Field Survey",
+      "Geo Tagging",
+      "Offline Support"
+    ],
+    "Summary": "Field teams gather survey information with full offline sync and geo tagging, Offline only partly functional"
+  },
+  {
+    "Title": "Customer Feedback Analyzer",
+    "TechStack": [
+      "Feedback DB",
+      "Analysis Engine",
+      "Export Tool"
+    ],
+    "SolutionsImplemented": [
+      "Feedback submission",
+      "Automated sentiment scoring",
+      "Report generation"
+    ],
+    "ServicesOffered": [
+      "Feedback Analysis",
+      "Report Export",
+      "Sentiment Modeling"
+    ],
+    "Summary": "Analyzes customer feedback from multiple sources for trends, Sentiment system not actuall"
+  },
+  {
+    "Title": "Car sharing booking systm",
+    "TechStack": [
+      "Booking DB",
+      "Car API",
+      "User Locker"
+    ],
+    "SolutionsImplemented": [
+      "Car booking",
+      "User verification",
+      "Payment scheduling"
+    ],
+    "ServicesOffered": [
+      "Car Booking",
+      "Verification Services",
+      "Payment Scheduling"
+    ],
+    "Summary": "Users book cars and schedule payments, verification is part"
+  },
+  {
+    "Title": "Agri Supply Chain platfrm",
+    "TechStack": [
+      "Supply DB",
+      "Crop Data Engine",
+      "Order Sync"
+    ],
+    "SolutionsImplemented": [
+      "Crop offer listing",
+      "Order mgmt",
+      "Harvest forecast"
+    ],
+    "ServicesOffered": [
+      "Supply Chain Mgmt",
+      "Order Sync",
+      "Crop Analytics"
+    ],
+    "Summary": "Farmers list and manage crop offers, with automated order management. Forecast not built-out"
+  },
+  {
+    "Title": "Cloud Compute finOps tool",
+    "TechStack": [
+      "Billing Model",
+      "Service API",
+      "Cost Analyzer"
+    ],
+    "SolutionsImplemented": [
+      "Usage billing",
+      "Cost report",
+      "Service optimization"
+    ],
+    "ServicesOffered": [
+      "Cloud Billing",
+      "Usage Optimization",
+      "Report Automation"
+    ],
+    "Summary": "Firms monitor and optimize cloud costs, supports full billing and reporting"
+  },
+  {
+    "Title": "Group Message Solution",
+    "TechStack": [
+      "Message Engine",
+      "Contact DB",
+      "Notification Service"
+    ],
+    "SolutionsImplemented": [
+      "Bulk group chat",
+      "Contact sync",
+      "Automated message archive"
+    ],
+    "ServicesOffered": [
+      "Group Comm",
+      "Bulk Messaging",
+      "Archive Services"
+    ],
+    "Summary": "Supports bulk messaging for work groups, message archiving not enabled"
+  },
+  {
+    "Title": "Online fundraising platfrm",
+    "TechStack": [
+      "Donor DB",
+      "Payment Connector",
+      "Campaign Tracker"
+    ],
+    "SolutionsImplemented": [
+      "Donation tracking",
+      "Campaign management",
+      "Real time donation banner"
+    ],
+    "ServicesOffered": [
+      "Fundraising Management",
+      "Donor Analysis",
+      "Banner Service"
+    ],
+    "Summary": "Charities run campaigns and track donations, Donation banner works for only some campaigns"
+  },
+  {
+    "Title": "Rental property booking system",
+    "TechStack": [
+      "Property DB",
+      "Booking API",
+      "Payment Handler"
+    ],
+    "SolutionsImplemented": [
+      "Property listing",
+      "Booking calendar",
+      "Automated payment requests"
+    ],
+    "ServicesOffered": [
+      "Property Listing",
+      "Booking Services",
+      "Payment Notification"
+    ],
+    "Summary": "Facilitates rental property bookings with automated payment reminders. Payment reminders not implemented for all bookings."
+  }
+]

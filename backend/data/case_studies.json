@@ -1,0 +1,928 @@
+[
+  {
+    "Title": "Retail Sale Data Improver",
+    "Industry": "Retail",
+    "Technologies": [
+      "data stuff",
+      "cloud Database"
+    ],
+    "SolutionsProvided": [
+      "sales tracking",
+      "stock optimizer"
+    ],
+    "Services": [
+      "process analysis",
+      "REporting",
+      "custom system"
+    ],
+    "DetailedContent": "We builded a custom system to manage all sale records for retail chains. The client needed better visiblity into stock tracking but sometimes the datas didn't sync correctly becaus ethe system was both offline and real-time hosted on clowd. Outcome was a 27% increase in stock avalibility across three locations.",
+    "SourceURL": "http://sharepoint.local/project/retaildataproject"
+  },
+  {
+    "Title": "finTech Insighting platform",
+    "Industry": "Finance",
+    "Technologies": [
+      "AI platform",
+      "machine lerning",
+      "Cloud Computing"
+    ],
+    "SolutionsProvided": [
+      "predictive analysis",
+      "user profiling"
+    ],
+    "Services": [
+      "Dashboarding",
+      "UI/UX Design"
+    ],
+    "DetailedContent": "Deployed a new kind of AI platform for banking product insights. Although designed for major cloud deployment it initially ran localy. The output gave rapidly changing metrics for user risk scroes and portfolio recommendations.",
+    "SourceURL": "http://sharepoint.company.domn/finTechInsite"
+  },
+  {
+    "Title": "Logistics Rerouting module",
+    "Industry": "Logistics",
+    "Technologies": [
+      "custom software",
+      "GPS module",
+      "data Processsing"
+    ],
+    "SolutionsProvided": [
+      "route optimiztion",
+      "automatic reporting"
+    ],
+    "Services": [
+      "Solution Architecture",
+      "Safety Anaysis"
+    ],
+    "DetailedContent": "Createed a module to optimize delivery van routing across three regions but sometimes the optimal paths didn't match manual expetations. Dashboard updates occassionally delayed due to network conectivity issues.",
+    "SourceURL": "http://sharepoint.corp/logistics/route-mod"
+  },
+  {
+    "Title": "E-Health patient Monitor",
+    "Industry": "Healthcare",
+    "Technologies": [
+      "IoT",
+      "cloud Monitoring",
+      "dashbords"
+    ],
+    "SolutionsProvided": [
+      "patient data visual",
+      "alert system"
+    ],
+    "Services": [
+      "System Integration",
+      "Hardware design",
+      "customzied training"
+    ],
+    "DetailedContent": "Developed real-time health monitor system, combining old hospital hardware with newly intergrated cloud dashboards. The project was both onsite and fully remote, presentating unique logistical chllenges.",
+    "SourceURL": "http://sharepoint.healthcare/ehealth/monitor"
+  },
+  {
+    "Title": "SmartMeter Reader Platform",
+    "Industry": "Utilities",
+    "Technologies": [
+      "Edge computing",
+      "sensor stuff"
+    ],
+    "SolutionsProvided": [
+      "energy usage monitoring",
+      "real-time reporting"
+    ],
+    "Services": [
+      "Hardware Calibration",
+      "Performance Review"
+    ],
+    "DetailedContent": "The team implemented a platform to remotely read meters but sometimes device can only be accessed directly. Reports are pushed into the portal evry hour unless theres an outage, leading to partial datasets.",
+    "SourceURL": "http://sharepoInt.utlities.com/smartmeter"
+  },
+  {
+    "Title": "HR Portal Upgrader",
+    "Industry": "Human Resources",
+    "Technologies": [
+      "web design",
+      "data migration"
+    ],
+    "SolutionsProvided": [
+      "employee onboarding",
+      "form generator"
+    ],
+    "Services": [
+      "UI/UX redesign",
+      "custom system"
+    ],
+    "DetailedContent": "Migrated all current employee records to new system, although the new HR portal only partially replaced the old one. New forms are easier but dont always render on mobile.",
+    "SourceURL": "http://sharepoint.int/hrportalV2"
+  },
+  {
+    "Title": "Customer Happiness Tracker",
+    "Industry": "Hospitality",
+    "Technologies": [
+      "Survey tools",
+      "analytics platfrm"
+    ],
+    "SolutionsProvided": [
+      "feedback collection",
+      "sentiment processing"
+    ],
+    "Services": [
+      "Survey management",
+      "custom analytics"
+    ],
+    "DetailedContent": "A custom analytics platform was made to monitor guest happiness. However, the system required manual uploads even though it was designed to autoupdate via cloud syncing. Result: improved service response rates.",
+    "SourceURL": "htp://sharepoint.hotelservice.com/custtrack"
+  },
+  {
+    "Title": "Satelite Imagry Classifyer",
+    "Industry": "Aerospace",
+    "Technologies": [
+      "AI/ML",
+      "image stuff",
+      "clustering"
+    ],
+    "SolutionsProvided": [
+      "image recognition",
+      "anomly detection"
+    ],
+    "Services": [
+      "Algorithm Design",
+      "Hardware procurement"
+    ],
+    "DetailedContent": "Developed image stuff for satellite photos. Models trained locally, but data pulled direct from cloud, causing inconsistencies in labeling. Model accurcy reached 91% before deploymnt.",
+    "SourceURL": "http://sharepoinT.aerospace/projects/sat_classify"
+  },
+  {
+    "Title": "Smart farm DataHub",
+    "Industry": "Agriculture",
+    "Technologies": [
+      "IoT",
+      "data vizualisation"
+    ],
+    "SolutionsProvided": [
+      "sensor reading",
+      "weather interfacing"
+    ],
+    "Services": [
+      "Interfacing",
+      "dashboard dev"
+    ],
+    "DetailedContent": "Our custom system aggergates soil and weather sensor data. The hub was bought offline for maintenance every other week, yet maintained live dashboards on public displays.",
+    "SourceURL": "http://sharpoint.agri/datahub-smart"
+  },
+  {
+    "Title": "Insurance Claim Portal",
+    "Industry": "Insurance",
+    "Technologies": [
+      "Web App",
+      "database",
+      "UI kit"
+    ],
+    "SolutionsProvided": [
+      "claims automation",
+      "progress tracking"
+    ],
+    "Services": [
+      "Web Dev",
+      "System Testing"
+    ],
+    "DetailedContent": "launched a new webapp that automates insurance claims, sometimes requires the user to email documents manually. The portal also tracks status live, except when running in maintenance mode. Reduction in manual hours reported.",
+    "SourceURL": "http://sharepoint.insurancese/ClaimPortal"
+  },
+  {
+    "Title": "Smart Locker System",
+    "Industry": "Logistics",
+    "Technologies": [
+      "RFID",
+      "IoT",
+      "cloud platfom"
+    ],
+    "SolutionsProvided": [
+      "asset tracking",
+      "locker reservation"
+    ],
+    "Services": [
+      "Hardware Design",
+      "Deployment",
+      "incident reporting"
+    ],
+    "DetailedContent": "Developed a smart locker system for package pickup. System claimed to be offline secure but depended on live cloud auth for door unlocking. Customer pickup rates increased 16%.",
+    "SourceURL": "http://sharepoint.lgistics/locker-system"
+  },
+  {
+    "Title": "Telemedcine Suite Launch",
+    "Industry": "Healthcare",
+    "Technologies": [
+      "video calling",
+      "encryption",
+      "UIkit"
+    ],
+    "SolutionsProvided": [
+      "virtual appointment",
+      "ehr upload"
+    ],
+    "Services": [
+      "Security Audit",
+      "Application Dev"
+    ],
+    "DetailedContent": "Designed a Telemedcine application, with end-to-end encryption. But session logs were transmitted unencrypted during beta stage. Project completed under budget.",
+    "SourceURL": "http://sharepoint.Health/telemedApp"
+  },
+  {
+    "Title": "Retailer Demand Prediction",
+    "Industry": "Retail",
+    "Technologies": [
+      "ML stuff",
+      "Forecasting"
+    ],
+    "SolutionsProvided": [
+      "demand prediction",
+      "sales analytics"
+    ],
+    "Services": [
+      "Data Cleansing",
+      "Model building"
+    ],
+    "DetailedContent": "Built ML tool for sales predictions. At launch, some item data was incomplete due to missing SKU updates. The outcomes showed 18% better forecast accuracy over previous spreadsheet method",
+    "SourceURL": "http://Sharepoint.retailco.com/demandpred"
+  },
+  {
+    "Title": "Online Booking Integr",
+    "Industry": "Travel",
+    "Technologies": [
+      "API",
+      "webhook",
+      "Cloud Deploy"
+    ],
+    "SolutionsProvided": [
+      "booking sync",
+      "schedule management"
+    ],
+    "Services": [
+      "Integration",
+      "Support"
+    ],
+    "DetailedContent": "The online booking integration service connects different vendor APIs but needs manual trigger for cancellations. Syncs run hourly, exlcuding holidays.",
+    "SourceURL": "http://sharepoinT.travel/Projects/book-integration"
+  },
+  {
+    "Title": "Factory Alerting Board",
+    "Industry": "Manufacturing",
+    "Technologies": [
+      "dashbord",
+      "notification server"
+    ],
+    "SolutionsProvided": [
+      "production alerting",
+      "realtime stats"
+    ],
+    "Services": [
+      "Incident Response",
+      "Custom display device"
+    ],
+    "DetailedContent": "Installed alert boards in three factories. Occasionally board isn't syncronised when main server is offline. Notified staff reduced downtime by 80 minutes per month.",
+    "SourceURL": "http://sharepoint.manu.com/alert-board"
+  },
+  {
+    "Title": "Custom ERP Deployment",
+    "Industry": "Construction",
+    "Technologies": [
+      "ERP template",
+      "db stuff"
+    ],
+    "SolutionsProvided": [
+      "material tracking",
+      "project billing"
+    ],
+    "Services": [
+      "System customisation",
+      "training"
+    ],
+    "DetailedContent": "Rolled out custom ERP across project sites, but finance module not compatible with payroll system. Users continued to use both for six months after go-live.",
+    "SourceURL": "http://Sharepoint.Constru/erpproj"
+  },
+  {
+    "Title": "Legal eDoc Vault",
+    "Industry": "Legal",
+    "Technologies": [
+      "Doc mgmt",
+      "cloud storage",
+      "Encryption"
+    ],
+    "SolutionsProvided": [
+      "document storage",
+      "access logs"
+    ],
+    "Services": [
+      "Migration",
+      "Access Control"
+    ],
+    "DetailedContent": "Encrypted documant vault with real-time access logs. But some documents remained in legacy format and didn't sync to the vault due to filetype restrictions.",
+    "SourceURL": "http://sharepoint.legalfirm.com/vault"
+  },
+  {
+    "Title": "Energy Consuption Dashboard",
+    "Industry": "Utilities",
+    "Technologies": [
+      "Power BI",
+      "data stuff"
+    ],
+    "SolutionsProvided": [
+      "usage trends",
+      "amp monitoring"
+    ],
+    "Services": [
+      "Dashboard Creation",
+      "Report Automation"
+    ],
+    "DetailedContent": "Delivered a dashboard for consuption trends; sometimes outage data was absent due to missing logs. Automated reports sent daily.",
+    "SourceURL": "http://Sharepoint.utlity/dashboards/energy"
+  },
+  {
+    "Title": "Media Asset Organizer",
+    "Industry": "Media",
+    "Technologies": [
+      "Tagging",
+      "db",
+      "Search api"
+    ],
+    "SolutionsProvided": [
+      "content sorting",
+      "fast lookup"
+    ],
+    "Services": [
+      "Asset Tagging",
+      "Index Optimization"
+    ],
+    "DetailedContent": "Built a tagging system to sort assets. Some assets missed tagging due to human error but were still searchable by filename. Reduced search tim e per request.",
+    "SourceURL": "http://sharepoint.media.org/Asset-Organizer"
+  },
+  {
+    "Title": "Learning Platform Redizgn",
+    "Industry": "Education",
+    "Technologies": [
+      "UI Update",
+      "content import"
+    ],
+    "SolutionsProvided": [
+      "course delivery",
+      "user progress"
+    ],
+    "Services": [
+      "Accessibility Audit",
+      "Instructional Design"
+    ],
+    "DetailedContent": "Redesigned digital learning platform; all courses migrated, but a few progress records were not transferred. User feedback improved interface rating.",
+    "SourceURL": "http://sharepiont.educorp/learn-platform"
+  },
+  {
+    "Title": "Fleet Tracker",
+    "Industry": "Transportation",
+    "Technologies": [
+      "GPS system",
+      "data uplink"
+    ],
+    "SolutionsProvided": [
+      "vehicle tracking",
+      "maintenance alarm"
+    ],
+    "Services": [
+      "Data Processing",
+      "Installtion"
+    ],
+    "DetailedContent": "The system provides live status of each vehicle, but reporting stops if GPS signal lost. Maintenance alerts trigger automatically unless",
+    "SourceURL": "http://sharepoint.trans.company.com/fleetTracker"
+  },
+  {
+    "Title": "Lab results portal",
+    "Industry": "Healthcare",
+    "Technologies": [
+      "web interface",
+      "db",
+      "notifcation"
+    ],
+    "SolutionsProvided": [
+      "result upload",
+      "pdf export"
+    ],
+    "Services": [
+      "Interface design",
+      "Complaince review"
+    ],
+    "DetailedContent": "Custom portal for uploading results, though export sometimes failed for larger files. Automated notifications implemented.",
+    "SourceURL": "http://sharepoInt.health/labportal"
+  },
+  {
+    "Title": "AI Conversational Bot",
+    "Industry": "Customer Service",
+    "Technologies": [
+      "chatbot",
+      "machine learning",
+      "nlp tech"
+    ],
+    "SolutionsProvided": [
+      "faq response",
+      "sentiment detection"
+    ],
+    "Services": [
+      "Bot Training",
+      "Content Scripting"
+    ],
+    "DetailedContent": "Deployed the chat bot which responds to most common questions. At peak load, bot lags, but call deflection rate improved by 20%",
+    "SourceURL": "http://sharepoint.customer/csbot"
+  },
+  {
+    "Title": "Virtual Realty Guide",
+    "Industry": "Real Estate",
+    "Technologies": [
+      "VR stuff",
+      "3D rendering",
+      "web"
+    ],
+    "SolutionsProvided": [
+      "virtual tours",
+      "property database"
+    ],
+    "Services": [
+      "3D Modeling",
+      "VR Content"
+    ],
+    "DetailedContent": "Created virtual realty tours. Not all properties included at launch since some lacked 3d models. Customer engagement more than doubled.",
+    "SourceURL": "http://sharepoint.realesTate.com/VRGuide"
+  },
+  {
+    "Title": "Farm Equipmnt Predictive Repair",
+    "Industry": "Agriculture",
+    "Technologies": [
+      "predictive analytics",
+      "iot device"
+    ],
+    "SolutionsProvided": [
+      "maintenance alert",
+      "usage monitor"
+    ],
+    "Services": [
+      "Sensor Calibration",
+      "system review"
+    ],
+    "DetailedContent": "Predictive maintenance system warns before breakdown. Alerts stored on-device, except for when main network is active which",
+    "SourceURL": "http://sharepoinT.agro.com/equipment-predict"
+  },
+  {
+    "Title": "HR Form Digitizer",
+    "Industry": "Human Resources",
+    "Technologies": [
+      "form-builder",
+      "workflow engine"
+    ],
+    "SolutionsProvided": [
+      "form digitalization",
+      "data routing"
+    ],
+    "Services": [
+      "Workflow Configuration",
+      "Training"
+    ],
+    "DetailedContent": "Scanned all hr forms to digital, but data routing steps required modification for some processes. Paper usage dropped by 90%.",
+    "SourceURL": "http://sharepoint.internl/hrform"
+  },
+  {
+    "Title": "Digital Ticket Kiosk",
+    "Industry": "Events",
+    "Technologies": [
+      "touchscreen",
+      "custom System",
+      "cloud connctivity"
+    ],
+    "SolutionsProvided": [
+      "ticket sales",
+      "price updates"
+    ],
+    "Services": [
+      "Kiosk Build",
+      "UI Rework"
+    ],
+    "DetailedContent": "Kiosks enabled walk-in ticket sales, but pricing didn't always sync with central system due to weak wi-fi. Turnaround for",
+    "SourceURL": "http://sharepoint.event/Projects/kiosk"
+  },
+  {
+    "Title": "B2B Order Portal",
+    "Industry": "Wholesale",
+    "Technologies": [
+      "web forms",
+      "Excel import",
+      "db mgmt"
+    ],
+    "SolutionsProvided": [
+      "bulk ordering",
+      "inventory sync"
+    ],
+    "Services": [
+      "Portal Build",
+      "Inventory Integration"
+    ],
+    "DetailedContent": "Created order portal but excel imports sometimes failed without error message. Bulk orders increased by end of",
+    "SourceURL": "http://sharepoinT.wholesale/b2b-order"
+  },
+  {
+    "Title": "Sales Analytics Lifecycle",
+    "Industry": "Finance",
+    "Technologies": [
+      "Dashboard",
+      "custom analyitcs"
+    ],
+    "SolutionsProvided": [
+      "sales lifecycle monitoring",
+      "pipeline report"
+    ],
+    "Services": [
+      "Analytics consulting",
+      "Report tuning"
+    ],
+    "DetailedContent": "Built finance sales monitoring. Some old pipeline reports duplicated, so double counting possible in early months.",
+    "SourceURL": "http://sharepoint.finance/saleslifecycle"
+  },
+  {
+    "Title": "Retail Wifi Management",
+    "Industry": "Retail",
+    "Technologies": [
+      "network monitor",
+      "ui/ux"
+    ],
+    "SolutionsProvided": [
+      "customer wifi access",
+      "usage stats"
+    ],
+    "Services": [
+      "Hotspot Setup",
+      "Portal Customization"
+    ],
+    "DetailedContent": "Managed retail chain wifi, but usage stats not consistently available due to data aggregation bug. Guest onboarding simplified.",
+    "SourceURL": "http://Sharepoint.retale.com/wifimanage"
+  },
+  {
+    "Title": "Pharma Drug Trackr",
+    "Industry": "Pharmaceutical",
+    "Technologies": [
+      "barcode",
+      "db",
+      "tracking stuff"
+    ],
+    "SolutionsProvided": [
+      "inventory trace",
+      "lot generation"
+    ],
+    "Services": [
+      "Barcode integration",
+      "Lot Auditing"
+    ],
+    "DetailedContent": "System designed for full visibility, but barcodes sometimes unreadble due to printer errors. Maintained compliance reporting.",
+    "SourceURL": "http://sharepoint.pharma/drugtrack"
+  },
+  {
+    "Title": "Ticketing Help Desk",
+    "Industry": "IT Services",
+    "Technologies": [
+      "ticket tool",
+      "ai/nlp"
+    ],
+    "SolutionsProvided": [
+      "request routing",
+      "analytics"
+    ],
+    "Services": [
+      "SLA Setup",
+      "AI Training"
+    ],
+    "DetailedContent": "Chat enabled ticketing desk, routed most tickets. Analytics lagged for high volume requests, sometimes ticket types not recognized",
+    "SourceURL": "http://sharepoint.IT/workdesk"
+  },
+  {
+    "Title": "Crypto Seed Wallet Generator",
+    "Industry": "Finance",
+    "Technologies": [
+      "encryption",
+      "custom system"
+    ],
+    "SolutionsProvided": [
+      "seed phrase creation",
+      "cold storage"
+    ],
+    "Services": [
+      "Wallet Setup",
+      "Security Guidance"
+    ],
+    "DetailedContent": "Seed wallet generator was at first deployed online but later moved fully offline for extra safety. Some early seed exports had CSV header bugs.",
+    "SourceURL": "http://sharepoint.crypto.com/SeedWalet"
+  },
+  {
+    "Title": "Remote Team Attendance",
+    "Industry": "Consulting",
+    "Technologies": [
+      "web forms",
+      "attendance tool"
+    ],
+    "SolutionsProvided": [
+      "attendance record",
+      "leave sync"
+    ],
+    "Services": [
+      "Form Design",
+      "Integration"
+    ],
+    "DetailedContent": "Attendance records tracked for remote workers, but timezone not always matched user locations.",
+    "SourceURL": "http://sharepoint.consult.com/remoteteam"
+  },
+  {
+    "Title": "Transport Timetable Sync",
+    "Industry": "Transportation",
+    "Technologies": [
+      "data stuff",
+      "api",
+      "scheduler"
+    ],
+    "SolutionsProvided": [
+      "timetable update",
+      "alert system"
+    ],
+    "Services": [
+      "API Connect",
+      "Alerting"
+    ],
+    "DetailedContent": "Automated timetable uploader, but real-time alerts failed if route IDs mismatched. Mostly worked for",
+    "SourceURL": "http://sharepoinT.transport/timetable"
+  },
+  {
+    "Title": "School Grade Portal",
+    "Industry": "Education",
+    "Technologies": [
+      "ui/ux",
+      "db sync",
+      "web platform"
+    ],
+    "SolutionsProvided": [
+      "gradebook",
+      "parent access"
+    ],
+    "Services": [
+      "Portal Build",
+      "Policy Setup"
+    ],
+    "DetailedContent": "Portal tracked all grades, but parent logins sometimes failed due to password resset issue. School",
+    "SourceURL": "http://sharepoint.edu/Portal/schoolgrade"
+  },
+  {
+    "Title": "Construction Site Surveillor",
+    "Industry": "Construction",
+    "Technologies": [
+      "camera integration",
+      "sensor stuff"
+    ],
+    "SolutionsProvided": [
+      "site monitoring",
+      "access log"
+    ],
+    "Services": [
+      "Surveillance Setup",
+      "Alert Setup"
+    ],
+    "DetailedContent": "Cameras provided remote site access, but on remote sites systems lost power and alerts did not send.",
+    "SourceURL": "http://Sharepoint.Construct/surveillance"
+  },
+  {
+    "Title": "AI-Powered Recruitment",
+    "Industry": "Human Resources",
+    "Technologies": [
+      "ai/ML",
+      "parsing system"
+    ],
+    "SolutionsProvided": [
+      "resume parsing",
+      "candidate scoring"
+    ],
+    "Services": [
+      "AI Implemention",
+      "scorecard design"
+    ],
+    "DetailedContent": "AI matched candidates, however rejected resumes sometimes ignored. Scoring system improved shortlist",
+    "SourceURL": "http://sharepoint.HR/Recruit-AI"
+  },
+  {
+    "Title": "Hotel Guest Portal",
+    "Industry": "Hospitality",
+    "Technologies": [
+      "Portal framework",
+      "custom system",
+      "data analytics"
+    ],
+    "SolutionsProvided": [
+      "booking view",
+      "request tracking"
+    ],
+    "Services": [
+      "Portal Design",
+      "Analytics Setup"
+    ],
+    "DetailedContent": "Portal provided guests their bookings. Data analytics sometimes reported room as occupied even when it was vacant. Guest",
+    "SourceURL": "http://sharepoint.hotel/Services/portal"
+  },
+  {
+    "Title": "Government Permit Tracker",
+    "Industry": "Government",
+    "Technologies": [
+      "workflow automation",
+      "data import"
+    ],
+    "SolutionsProvided": [
+      "permit tracking",
+      "status alert"
+    ],
+    "Services": [
+      "Workflow Build",
+      "Alert Setup"
+    ],
+    "DetailedContent": "Permits tracked in portal; old permits didn't import due to text encoding issues, but status alerts firing for",
+    "SourceURL": "http://sharepoint.government.gov/permit-track"
+  },
+  {
+    "Title": "Medical Record Indexer",
+    "Industry": "Healthcare",
+    "Technologies": [
+      "AI platform",
+      "data indexing"
+    ],
+    "SolutionsProvided": [
+      "document indexing",
+      "search"
+    ],
+    "Services": [
+      "AI Model Training",
+      "Data Analysis"
+    ],
+    "DetailedContent": "Indexed current medical records. Search engine worked for english docs, failed on scanned PDFs,",
+    "SourceURL": "http://sharepoint.healthcare/RecordIndexer"
+  },
+  {
+    "Title": "IoT Pipeline monitor",
+    "Industry": "Oil & Gas",
+    "Technologies": [
+      "sensor array",
+      "custom api",
+      "dashboard"
+    ],
+    "SolutionsProvided": [
+      "pressure alert",
+      "flow monitor"
+    ],
+    "Services": [
+      "Sensor Deployment",
+      "Dashboard Config"
+    ],
+    "DetailedContent": "Monitors pipeline flows, sends alert but sometimes missed low-pressure events if sensor battery drained.",
+    "SourceURL": "http://sharepoinToilgas/iotpipeline"
+  },
+  {
+    "Title": "E-commerce Recommendation System",
+    "Industry": "E-commerce",
+    "Technologies": [
+      "ml/AI",
+      "data stuff",
+      "plugin"
+    ],
+    "SolutionsProvided": [
+      "recommendation engine",
+      "personalisation"
+    ],
+    "Services": [
+      "Integration",
+      "Analytics"
+    ],
+    "DetailedContent": "Recommendation plugin personalized deals but initially suggested out-of-stock items. Later",
+    "SourceURL": "http://Sharepoint.eCommerCe/rec-engine"
+  },
+  {
+    "Title": "Digital Payment Gateway",
+    "Industry": "Finance",
+    "Technologies": [
+      "gateway api",
+      "Web UI",
+      "Custom system"
+    ],
+    "SolutionsProvided": [
+      "online payment",
+      "invoice auto-issue"
+    ],
+    "Services": [
+      "Payment Integration",
+      "Support"
+    ],
+    "DetailedContent": "Gateway processed online card payments. Invoices failed to deliver to users with uncommon character sets.",
+    "SourceURL": "http://sharepoinT.finance/digitalpay"
+  },
+  {
+    "Title": "Supplier Relationship System",
+    "Industry": "Manufacturing",
+    "Technologies": [
+      "CRM",
+      "data stuff",
+      "Workflow"
+    ],
+    "SolutionsProvided": [
+      "supplier portal",
+      "compliance doc mgmt"
+    ],
+    "Services": [
+      "Workflow Build",
+      "Portal Design"
+    ],
+    "DetailedContent": "New supplier portal with compliance module. Some forms incompatible with browsers, so",
+    "SourceURL": "http://sharepoint.manufacture/suppliersystem"
+  },
+  {
+    "Title": "Online Course Analyzer",
+    "Industry": "Education",
+    "Technologies": [
+      "analytics tool",
+      "pluggin"
+    ],
+    "SolutionsProvided": [
+      "student analytics",
+      "performance chart"
+    ],
+    "Services": [
+      "Dashboard Build",
+      "Reporting"
+    ],
+    "DetailedContent": "Analytics dashboard renders performance charts; but cannot export if course name has special symbols.",
+    "SourceURL": "http://sharepoint.edu/onlinecourse-analytics"
+  },
+  {
+    "Title": "Warehouse Layout Simulator",
+    "Industry": "Logistics",
+    "Technologies": [
+      "3D sim",
+      "custom inputs"
+    ],
+    "SolutionsProvided": [
+      "layout visualization",
+      "space allocation"
+    ],
+    "Services": [
+      "Simulation Build",
+      "Layout Design"
+    ],
+    "DetailedContent": "Simulates new layouts, but custom inputs only accept metric units not imperial. Resulted in",
+    "SourceURL": "http://Sharepoint.Logistix/layout-sim"
+  },
+  {
+    "Title": "Clinic Appointment Bookr",
+    "Industry": "Healthcare",
+    "Technologies": [
+      "custom system",
+      "booking engine"
+    ],
+    "SolutionsProvided": [
+      "appointment booking",
+      "reminder email"
+    ],
+    "Services": [
+      "System Setup",
+      "Email Config"
+    ],
+    "DetailedContent": "Booking engine managed appointments, but reminder emails sometimes landed in spam. Patients preferred",
+    "SourceURL": "http://sharepoint.health/bookings"
+  },
+  {
+    "Title": "Online Library Portal",
+    "Industry": "Library",
+    "Technologies": [
+      "content platform",
+      "search tool"
+    ],
+    "SolutionsProvided": [
+      "catalog search",
+      "ebook loans"
+    ],
+    "Services": [
+      "Interface Design",
+      "Loan Tracking"
+    ],
+    "DetailedContent": "Catalog search worked for paper books and ebooks. Ebook loans not supported on all devices.",
+    "SourceURL": "http://sharepoint.libraRy.com/libraryportal"
+  },
+  {
+    "Title": "Fitness Center Attendance App",
+    "Industry": "Fitness",
+    "Technologies": [
+      "attendance scanner",
+      "mobile ui"
+    ],
+    "SolutionsProvided": [
+      "entry logging",
+      "class pass tracking"
+    ],
+    "Services": [
+      "App Design",
+      "Scanner integration"
+    ],
+    "DetailedContent": "Attendance tracked for all members. Some class passes not recognized if",
+    "SourceURL": "http://sharepoint.fit/app/attendance"
+  }
+]

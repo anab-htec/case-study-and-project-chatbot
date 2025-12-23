@@ -1,0 +1,7 @@
+.ChatBotContainer {
+  flex-grow: 1;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow-y: auto;
+}
