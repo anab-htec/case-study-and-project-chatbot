@@ -62,7 +62,7 @@ class RagWorkflow(Workflow):
         self._query_preprocessor = query_preprocessor
         self._max_attempts = 2
         self._top_k_case_studies = 5
-        self._top_k_projects = 10
+        self._top_k_projects = 5
 
     @step
     async def start(self, ctx: Context, ev: StartEvent) -> QueryEvent:
