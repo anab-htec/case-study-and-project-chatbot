@@ -1,8 +1,9 @@
 from deepeval.test_case import LLMTestCase
 from deepeval.metrics import BaseMetric
 
-class RetrievalThresholdMetric(BaseMetric):
-    def __init__(self, threshold: float = 1.0):
+class ScoreThresholdMetric(BaseMetric):
+    def __init__(self, min_score: float = 0.6, threshold: float = 1.0):
+        self.min_score = min_score
         self.threshold = threshold
         self.success = False 
 
@@ -14,14 +15,14 @@ class RetrievalThresholdMetric(BaseMetric):
             self.reason = "No similarity scores found in metadata."
             return self.score
 
-        low_scores = [s for s in scores if s < 0.6]
+        low_scores = [s for s in scores if s < self.min_score]
         
         if len(low_scores) == 0:
             self.score = 1.0
-            self.reason = f"All {len(scores)} projects met the 0.6 threshold."
+            self.reason = f"All {len(scores)} records met the {self.min_score} threshold."
         else:
             self.score = 1.0 - (len(low_scores) / len(scores))
-            self.reason = f"{len(low_scores)} projects fell below the 0.6 threshold: {low_scores}"
+            self.reason = f"{len(low_scores)} records fell below the {self.min_score} threshold: {low_scores}"
         
         return self.score
 
@@ -33,4 +34,4 @@ class RetrievalThresholdMetric(BaseMetric):
 
     @property
     def __name__(self):
-        return "Project Score Threshold"
+        return "Score Threshold"

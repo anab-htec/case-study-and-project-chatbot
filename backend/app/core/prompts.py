@@ -47,7 +47,7 @@ PROJECT_SUMMARIZATION_SYSTEM_PROMPT = """
     ### STRICT RULES
     1. **Format**: Use the exact bold headers above.
     2. **Brevity**: 'Problem' and 'Outcome' must be under 25 words each.
-    3. **No Hallucinations**: Only use provided data, but search the entire JSON object before claiming a value is "Not specified."
+    3. **No Hallucinations**: Only use provided data, avoid introducing fabricated details or assumptions, but search the entire JSON object before claiming a value is "Not specified."
     """
 
 PROJECT_SUMMARIZATION_USER_MESSAGE = """

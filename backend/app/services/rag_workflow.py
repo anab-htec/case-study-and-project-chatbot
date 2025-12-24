@@ -37,6 +37,7 @@ class CaseStudyRetrievalResultEvent(Event):
     result: List[ScoredRecord[CaseStudy]]
 
 class FailureEvent(Event):
+    intext_context: IntentContext
     reason: str
 
 class FeedbackEvent(Event):
@@ -61,7 +62,7 @@ class RagWorkflow(Workflow):
         self._query_preprocessor = query_preprocessor
         self._max_attempts = 2
         self._top_k_case_studies = 5
-        self._top_k_projects = 5
+        self._top_k_projects = 10
 
     @step
     async def start(self, ctx: Context, ev: StartEvent) -> QueryEvent:
@@ -86,7 +87,9 @@ class RagWorkflow(Workflow):
         if (intent_context.intent == Intent.PROJECT_MATCHING or intent_context.intent == Intent.CASE_STUDY_RETRIEVAL):
             return IntentEvent(query=query, intent_context=intent_context)
         else:
-            return FailureEvent(reason=FailureReason.AMBIGUOUS_INTENT)
+            return FailureEvent(
+                intext_context=intent_context,
+                reason=FailureReason.AMBIGUOUS_INTENT)
         
     @step
     async def retrieval(self, ctx: Context, ev: IntentEvent) -> ProjectRetrievalResultEvent | CaseStudyRetrievalResultEvent | FailureEvent:
@@ -96,7 +99,9 @@ class RagWorkflow(Workflow):
             logger.info(f"Retrieved {len(records)} case studies.")
 
             if not records:
-                return FailureEvent(reason=FailureReason.NO_MATCHING_RECORDS)  
+                return FailureEvent(
+                    intext_context=ev.intent_context,
+                    reason=FailureReason.NO_MATCHING_RECORDS)  
 
             return CaseStudyRetrievalResultEvent(
                 query=ev.query, 
@@ -113,7 +118,9 @@ class RagWorkflow(Workflow):
             logger.info(f"Retrieved {len(records)} projects.")
 
             if not records:
-                return FailureEvent(reason=FailureReason.NO_MATCHING_RECORDS)  
+                return FailureEvent(
+                    intext_context=ev.intent_context,
+                    reason=FailureReason.NO_MATCHING_RECORDS)  
 
             return ProjectRetrievalResultEvent(
                 query=ev.query, 
@@ -179,7 +186,10 @@ class RagWorkflow(Workflow):
             
         return InputRequiredEvent(
             result=prompt,
-            metadata=ev.reason
+            metadata={
+                "reason": ev.reason,
+                "intent_context": ev.intext_context
+            }
         )
     
     @step

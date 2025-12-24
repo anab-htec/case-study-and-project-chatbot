@@ -8,9 +8,10 @@ from app.models.case_study import CaseStudy
 from app.models.project import Project
 
 async def run_scenario_test(workflow, golden: Golden):
-    actual_output = ""
+    actual_output = ""    
     retrieval_context = []
     scores = []
+    intent_context = None
     start_time = time.perf_counter()
     
     handler = workflow.run(query=golden.input)
@@ -18,15 +19,21 @@ async def run_scenario_test(workflow, golden: Golden):
     async for event in handler.stream_events():
         if isinstance(event, InputRequiredEvent):
             actual_output = event.result 
+            intent_context = event.metadata.get("intent_context")
             await handler.cancel_run()
 
             break
             
         elif isinstance(event, StopEvent):
             result_data = event.result
-            actual_output = result_data.get("answer", "")
-            records = result_data.get("retrieved_records", [])
-            intent_context = result_data.get("intent_context")
+            if result_data is None:
+                actual_output = "Error: Workflow stopped without returning a result."
+                records = []
+                intent_context = None
+            else:
+                actual_output = result_data.get("answer", "")
+                records = result_data.get("retrieved_records", [])
+                intent_context = result_data.get("intent_context")
             
             if records and intent_context:
                 scores = [r.score for r in records]
@@ -39,7 +46,7 @@ async def run_scenario_test(workflow, golden: Golden):
             break
 
     latency = time.perf_counter() - start_time
-    
+
     return LLMTestCase(
         input=golden.input,
         actual_output=actual_output,
@@ -48,7 +55,8 @@ async def run_scenario_test(workflow, golden: Golden):
         additional_metadata={
             **golden.additional_metadata,
             "latency": latency,
-            "similarity_scores": scores
+            "similarity_scores": scores,
+            "actual_intent": intent_context.intent if intent_context else None
         }
     )
 
