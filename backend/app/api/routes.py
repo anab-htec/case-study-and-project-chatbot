@@ -9,11 +9,6 @@ from app.models.constants import WorfklowStatus
 
 router = APIRouter()
 
-@router.get('/hello')
-async def get_message():
-    logger.info("Starting message call")
-    return {"message": "hello world"}
-
 @router.post('/workflow')
 async def run_worklow(workflow: RagWorkflowDep, workflow_manager: WorkflowManagerDep, request: ChatRequest):
     try:
