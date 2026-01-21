@@ -5,8 +5,9 @@ from deepeval.metrics import FaithfulnessMetric
 from deepeval import evaluate
 
 from app.dependencies import get_query_preprocessor, get_rag_workflow, get_weaviate_manager, get_project_repo, get_case_study_repo, get_llm_service, get_nlp_processor, get_aggregator
-from evaluation.metrics.clarification_metric import clarification_metric
-from evaluation.metrics.attribute_coverage_metric import create_attribute_coverage_metric
+from evaluation.metrics.ambiguous_intent_clarification_metric import ambiguous_intent_clarification_metric
+from evaluation.metrics.no_results_clarification_metric import no_results_clarification_metric
+from evaluation.metrics.attribute_coverage_metric import AttributeCoverageMetric
 from evaluation.metrics.intent_accuracy_metric import IntentAccuracyMetric
 from evaluation.metrics.latency_metric import LatencyMetric
 from evaluation.metrics.score_threshold_metric import ScoreThresholdMetric
@@ -25,11 +26,13 @@ async def run_evaluation():
     score_threshold_metric = ScoreThresholdMetric(min_score=0.6)
     intent_accuracy_metric = IntentAccuracyMetric()
     latency_metric = LatencyMetric(max_seconds=40)
-    project_attribute_coverage_metric = create_attribute_coverage_metric(
-        target_attributes=["TechStack", "SolutionsImplemented", "ServicesOffered"]
+    project_attribute_coverage_metric = AttributeCoverageMetric(
+        model=custom_model,
+        target_attributes=["TECH STACK", "SOLUTIONS IMPLEMENTED", "SERVICES OFFERED"]
     )
-    case_study_attribute_coverage_metric = create_attribute_coverage_metric(
-        target_attributes=["Industry", "Technologies", "SolutionsProvided", "Services"]
+    case_study_attribute_coverage_metric = AttributeCoverageMetric(
+        model=custom_model,
+        target_attributes=["INDUSTRY", "TECHNOLOGIES", "SOLUTIONS PROVIDED", "SERVICES"]
     )
 
     weaviate_manager = get_weaviate_manager()
@@ -62,12 +65,19 @@ async def run_evaluation():
             error_config=ErrorConfig(ignore_errors=True))
         results.append({"scenario": "Project matching", "results": project_cases_result})
 
-        clarification_cases = [tc for tc in test_cases if tc.additional_metadata["scenario"] in ["ambiguous_intent", "no_results"]]
-        clarification_cases_result = evaluate(
-            clarification_cases, 
-            metrics=[intent_accuracy_metric, clarification_metric, latency_metric],
+        ambiguous_intent_clarification_cases = [tc for tc in test_cases if tc.additional_metadata["scenario"] in ["ambiguous_intent"]]
+        ambiguous_intent_clarification_cases_result = evaluate(
+            ambiguous_intent_clarification_cases, 
+            metrics=[intent_accuracy_metric, ambiguous_intent_clarification_metric, latency_metric],
             error_config=ErrorConfig(ignore_errors=True))
-        results.append({"scenario": "Clarification required", "results": clarification_cases_result})
+        results.append({"scenario": "Ambiguous intent", "results": ambiguous_intent_clarification_cases_result})
+
+        no_results_clarification_cases = [tc for tc in test_cases if tc.additional_metadata["scenario"] in ["no_results"]]
+        no_results_clarification_cases_result = evaluate(
+            no_results_clarification_cases, 
+            metrics=[intent_accuracy_metric, no_results_clarification_metric, latency_metric],
+            error_config=ErrorConfig(ignore_errors=True))
+        results.append({"scenario": "No results", "results": no_results_clarification_cases_result})
 
         generate_report(results)
 
@@ -108,7 +118,8 @@ def generate_report(results: List):
         print(f" Overall Pass Rate: {pass_rate:.1f}% ({successful_cases}/{total_cases})")
         
         for metric_name, scores in metric_scores.items():
-            avg_score = sum(scores) / len(scores) if scores else 0
+            valid_scores = [score for score in scores if score is not None]
+            avg_score = sum(valid_scores) / len(valid_scores) if valid_scores else 0
             print(f"  - Avg {metric_name}: {avg_score:.4f}")
     
     print("\n" + "="*50)

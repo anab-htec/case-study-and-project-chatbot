@@ -1,4 +1,5 @@
 import asyncio
+import json
 from typing import List
 from llama_index.core.workflow import StartEvent, StopEvent, Workflow, step, Context, Event, InputRequiredEvent, HumanResponseEvent
 
@@ -9,6 +10,7 @@ from app.models.constants import Intent, FailureReason
 from app.models.intent_context import IntentContext
 from app.models.project import Project
 from app.models.case_study import CaseStudy
+from app.models.record import Record
 from app.models.scored_record import ScoredRecord
 from app.models.vector_search_result import VectorSearchResult
 from app.models.weighted_search_result import WeightedSearchResult
@@ -60,9 +62,9 @@ class RagWorkflow(Workflow):
         self._llm_service = llm_service
         self._aggregator = aggregator
         self._query_preprocessor = query_preprocessor
-        self._max_attempts = 2
-        self._top_k_case_studies = 5
-        self._top_k_projects = 5
+        self._clarification_max_attempts = settings.CLARIFICATION_MAX_ATTEMPTS
+        self._retrieval_top_k_case_studies = settings.RETRIEVAL_TOP_K_CASE_STUDIES
+        self._retrieval_top_k_projects = settings.RETRIEVAL_TOP_K_PROJECTS
 
     @step
     async def start(self, ctx: Context, ev: StartEvent) -> QueryEvent:
@@ -131,7 +133,11 @@ class RagWorkflow(Workflow):
     async def summarize_projects(self, ctx: Context, ev: ProjectRetrievalResultEvent) -> StopEvent:
         logger.info(f"Summarizing projects started")
         raw_projects = [item.record for item in ev.result]
-        summary = await self._llm_service.generate_summary(ev.query, PROJECT_SUMMARIZATION_SYSTEM_PROMPT, PROJECT_SUMMARIZATION_USER_MESSAGE, raw_projects)
+        summary = await self._generate_summary(
+            ev.query, 
+            PROJECT_SUMMARIZATION_SYSTEM_PROMPT, 
+            PROJECT_SUMMARIZATION_USER_MESSAGE, 
+            raw_projects)
 
         return StopEvent(
             result={
@@ -145,7 +151,11 @@ class RagWorkflow(Workflow):
     async def summarize_case_studies(self, ctx: Context, ev: CaseStudyRetrievalResultEvent) -> StopEvent:
         logger.info(f"Summarizing case studies started")
         raw_case_studies = [item.record for item in ev.result]
-        summary = await self._llm_service.generate_summary(ev.query, CASE_STUDY_SUMMARIZATION_SYSTEM_PROMPT, CASE_STUDY_SUMMARIZATION_USER_MESSAGE, raw_case_studies)
+        summary = await self._generate_summary(
+            ev.query, 
+            CASE_STUDY_SUMMARIZATION_SYSTEM_PROMPT, 
+            CASE_STUDY_SUMMARIZATION_USER_MESSAGE, 
+            raw_case_studies)
         
         return StopEvent(
             result={
@@ -159,7 +169,7 @@ class RagWorkflow(Workflow):
     async def clarification(self, ctx: Context, ev: FailureEvent) -> InputRequiredEvent | StopEvent:
         logger.warning(f"Workflow entering clarification mode. Reason: {ev.reason}")
         state = await ctx.store.get("state")
-        if state["iterations"] >= self._max_attempts:
+        if state["iterations"] >= self._clarification_max_attempts:
             await ctx.store.set("state", state)
             return StopEvent(
                 result={
@@ -207,7 +217,7 @@ class RagWorkflow(Workflow):
             return []
         
         vector = await self._llm_service.generate_embedding(query)
-        case_study_search_results = await self._case_study_repo.retrieve_case_study_records(vector, self._top_k_case_studies)
+        case_study_search_results = await self._case_study_repo.retrieve_case_study_records(vector, self._retrieval_top_k_case_studies)
 
         scored_case_studies = [
             ScoredRecord(record=item.obj, score=item.certainty) 
@@ -270,13 +280,24 @@ class RagWorkflow(Workflow):
             return []
         
         vector = await self._llm_service.generate_embedding(query)
-        return await self._project_repo.retrieve_project_records_by_technical_vector(vector, self._top_k_projects)
+        return await self._project_repo.retrieve_project_records_by_technical_vector(vector, self._retrieval_top_k_projects)
 
     async def _retrieve_projects_by_services(self, query: str) -> List[VectorSearchResult[Project]]:
         if not query:
             return []
         
         vector = await self._llm_service.generate_embedding(query)
-        return await self._project_repo.retrieve_project_records_by_service_vector(vector, self._top_k_projects)
+        return await self._project_repo.retrieve_project_records_by_service_vector(vector, self._retrieval_top_k_projects)
+    
+    async def _generate_summary(self, query: str, system_prompt: str, user_prompt: str, records: List[Record]) -> str:
+        items = [record.model_dump() for record in records]
+        json_data = json.dumps(items, indent=2)
+        system_prompt = system_prompt.format(query=query)
+        user_message = user_prompt.format(query=query, json_data=json_data)
+
+        return await self._llm_service.generate_text(
+            system_prompt=system_prompt,
+            user_message=user_message
+        )
     
         

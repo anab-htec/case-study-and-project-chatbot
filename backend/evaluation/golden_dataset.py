@@ -8,7 +8,7 @@ dataset = [
         additional_metadata={"scenario": "case_study_sum", "expected_intent": Intent.CASE_STUDY_RETRIEVAL}
     ),
     Golden(
-        input="Find case studies where we used 'IoT'",
+        input="How did we assist a client in the financial sector with predictive analytics? What were the challenges of implementing machine learning in this environment, and how did it improve decision-making?",
         additional_metadata={"scenario": "case_study_sum", "expected_intent": Intent.CASE_STUDY_RETRIEVAL}
     ),
     Golden(
@@ -16,7 +16,7 @@ dataset = [
         additional_metadata={"scenario": "case_study_sum", "expected_intent": Intent.CASE_STUDY_RETRIEVAL}
     ),
     Golden(
-        input="Summarize case studies that involve a mix of hardware design and custom software integration.",
+        input="Can you explain how we optimized a manufacturing client’s alerting system to reduce downtime? What were the challenges related to syncing systems, and what was the measurable impact on operational efficiency?",
         additional_metadata={"scenario": "case_study_sum", "expected_intent": Intent.CASE_STUDY_RETRIEVAL}
     ),
     Golden(
@@ -28,7 +28,7 @@ dataset = [
         additional_metadata={"scenario": "case_study_sum", "expected_intent": Intent.CASE_STUDY_RETRIEVAL}
     ),
     Golden(
-        input="Summarize case studies that involve Power BI and dashboards.",
+        input="What approach did we use to enhance customer engagement for a retail client? How did we address data inconsistencies and improve overall service delivery through automation and analytics?",
         additional_metadata={"scenario": "case_study_sum", "expected_intent": Intent.CASE_STUDY_RETRIEVAL}
     ),
     Golden(
@@ -48,11 +48,11 @@ dataset = [
         additional_metadata={"scenario": "project_match", "expected_intent": Intent.PROJECT_MATCHING}
     ),
     Golden(
-        input="Show me details about AI chatbot projects that use a Deep Learning Model and NoSQL. I need a solution that focuses on Automated customer replies and Query escalation routing, specifically involving Conversational Design, ML Training, and Customer Engagement services.",
+        input="Show all AI chatbot initiatives leveraging Deep Learning Models and NoSQL. The solution should cover Automated Customer Replies and Query Escalation Routing, and be part of Conversational Design, ML Training, and Customer Engagement services.",
         additional_metadata={"scenario": "project_match", "expected_intent": Intent.PROJECT_MATCHING}
     ),
     Golden(
-        input="I am searching for a project that utilizes an Urban Sensor Array and a Data Broker connected to Secure Cloud Systems. The project must demonstrate capabilities in Traffic flow monitoring, Incident capture, and Resource allocation, while offering services such as Urban Analytics, Cloud Filing, and Incident Reporting",
+        input="Can you show me examples of retail platforms using SQL and NoSQL databases for inventory monitoring and sales analytics?",
         additional_metadata={"scenario": "project_match", "expected_intent": Intent.PROJECT_MATCHING}
     ),
     Golden(
@@ -60,19 +60,19 @@ dataset = [
         additional_metadata={"scenario": "project_match", "expected_intent": Intent.PROJECT_MATCHING}
     ),
     Golden(
-        input="I am interested in frontend projects?",
+        input="I am looking for frontend projects build with React",
          additional_metadata={"scenario": "no_results", "expected_intent": Intent.PROJECT_MATCHING}
     ),
     Golden(
-        input="I am looking for information on AI projects",
+        input="Can you give me a list of all AI projects?",
         additional_metadata={"scenario": "no_results", "expected_intent": Intent.PROJECT_MATCHING}
     ),
     Golden(
-        input="I need to find engineers who are experts in Embedded Sensing and IoT Gateways for a new build.",
+        input="Our experience with IoT solutions",
         additional_metadata={"scenario": "ambiguous_intent", "expected_intent": Intent.AMBIGUOUS}
     ),
     Golden(
-        input="What can you tell me about your capabilities with Deep Learning Models and NoSQL data stores?",
+        input="Cloud solutions in Finance?",
         additional_metadata={"scenario": "ambiguous_intent", "expected_intent": Intent.AMBIGUOUS}
     )
 ]

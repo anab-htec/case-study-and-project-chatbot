@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List
+from typing import List, Optional
 
 from app.models.record import Record
 
@@ -10,14 +10,26 @@ class LLMService(ABC):
         pass
 
     @abstractmethod
-    async def generate_summary(self, query: str, system_prompt: str, user_prompt: str, records: List[Record]) -> str:
+    async def generate_text(self, 
+        system_prompt: str, 
+        user_message: str, 
+        model: Optional[str] = None, 
+        temperature: Optional[float] = None, 
+        max_tokens: Optional[int] = None, 
+        top_p: Optional[float] = None
+    ) -> str:
         pass
 
     @abstractmethod
-    async def generate_text(self, system_prompt: str, user_message: str, temperature: float = 0.2, max_tokens: int = 500) -> str:
-        pass
-
-    @abstractmethod
-    async def generate_object(self, system_prompt: str, user_message: str, response_format: type, temperature: float = 0.1, max_tokens: int = 500):
+    async def generate_object(
+        self, 
+        system_prompt: str, 
+        user_message: str, 
+        response_format: type, 
+        model: Optional[str] = None, 
+        temperature: Optional[float] = None, 
+        max_tokens: Optional[int] = None, 
+        top_p: Optional[float] = None
+    ):
         pass
     

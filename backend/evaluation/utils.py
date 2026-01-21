@@ -69,7 +69,7 @@ def format_case_study_for_eval(case_study: CaseStudy) -> str:
     TITLE: {case_study.title}
     INDUSTRY: {case_study.industry}
     TECHNOLOGIES: {", ".join(case_study.technologies)}
-    SOLUTIONS: {", ".join(case_study.solutionsProvided)}
+    SOLUTIONS PROVIDED: {", ".join(case_study.solutionsProvided)}
     SERVICES: {", ".join(case_study.services)}
     DETAILED CONTENT: {case_study.detailedContent}
     SOURCE URL: {case_study.sourceUrl}
@@ -82,7 +82,7 @@ def format_project_for_eval(project: Project) -> str:
     """
     return f""" 
     TITLE: {project.title}
-    TECH STACK: {project.techStack}
+    TECH STACK: {", ".join(project.techStack)}
     SOLUTIONS IMPLEMENTED: {", ".join(project.solutionsImplemented)}
     SERVICES OFFERED: {", ".join(project.servicesOffered)}
     SUMMARY: {project.summary}

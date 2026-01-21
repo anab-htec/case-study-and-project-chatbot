@@ -59,7 +59,10 @@ async def generate_records(client: openai.OpenAI, num_records: int):
     user_message = USER_MESSAGE.format(num_records=num_records)
     try:
         response = client.chat.completions.create(
-            model = "l2-gpt-4.1",
+            model = settings.OPENAI_SYNTHETIC_DATA_MODEL,
+            temperature = settings.OPENAI_SYNTHETIC_DATA_TEMPERATURE,
+            max_tokens = settings.OPENAI_SYNTHETIC_DATA_MAX_TOKENS,
+            top_p=settings.OPENAI_SYNTHETIC_DATA_TOP_P,
             messages = [
                 { "role": "system", "content": SYSTEM_PROMPT },
                 { "role": "user", "content": user_message }
