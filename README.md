@@ -81,6 +81,93 @@ graph TD
     EXIT_MSG --> END
 ```
 
+## Intent Classification
+
+User queries are classified based on the **user’s underlying goal and the type of response they expect**, not simply on keywords, industries, or technologies mentioned.
+
+As a rule of thumb:
+- If the query can be answered with a **list of projects or capabilities**, it is a **Project**.
+- If the query requires a **narrative explaining how a problem was solved and what impact it had**, it is a **Case Study**.
+- If the expected response is **unclear**, the intent is **Ambiguous**.
+
+---
+
+### PROJECT_MATCHING — Technical Capability Validation
+
+**Purpose**  
+Used when the user is interested in **what was built** and **which technologies or services were used**. These queries focus on technical capability and delivery experience and can typically be answered with a structured list.
+
+**Key Characteristics**
+- Focus on **WHAT** was implemented
+- Emphasis on technologies, architectures, and solutions
+- No requirement for narrative, challenges, or outcomes
+
+**Examples**
+
+- **Show me examples of asset security systems using encrypted data channels and cloud monitoring for real-time tamper detection and asset status reporting.**  
+  Requests examples of implementations involving specific technologies and solutions, focusing on what was built and the tools used.
+
+- **Find projects using device gateways and data stream processing for real-time smart meter systems.**  
+  Explicitly asks for projects and references concrete technologies, indicating technical capability validation.
+
+- **I need a mobile payment integration solution that uses hybrid frameworks and push notifications for fraud detection and receipt generation.**  
+  Specifies required technologies and features, implying a search for relevant projects or capabilities rather than a narrative.
+
+---
+
+### CASE_STUDY_RETRIEVAL — Narrative and Outcome Validation
+
+**Purpose**  
+Used when the user wants to understand **how a problem was solved**, **what challenges were encountered**, and **what outcomes were achieved**. These queries require contextual storytelling and business impact.
+
+**Key Characteristics**
+- Focus on **HOW** and **WHY**
+- Emphasis on challenges, approach, and results
+- Requires narrative context and impact
+
+**Examples**
+
+- **Tell me about a project where we optimized supply chain operations for a logistics client. What obstacles did we encounter, and what was the result in terms of efficiency and cost reduction?**  
+  Requests a narrative describing challenges, approach, and measurable outcomes.
+
+- **Can you explain how we improved customer Wi-Fi management for a retail client? What issues did we face, and how did the system improve customer access and service?**  
+  Seeks a detailed explanation of the problem, solution, and resulting improvements.
+
+- **Give me an overview of case studies that focus on how we've used data visualization and dashboards to improve business decision-making.**  
+  Explicitly requests case studies and focuses on impact and improvement.
+
+---
+
+### AMBIGUOUS — Undefined or Unclear Intent
+
+**Purpose**  
+Used when a query mentions a topic, technology, or industry but does not clearly indicate whether the user expects a list of projects or a narrative case study.
+
+**Key Characteristics**
+- No clear directive or expected output
+- Topic-only or broad experience statements
+- Could reasonably be interpreted as either Project or Case Study
+
+**Examples**
+
+- **Tell me about our experience with microservices.**  
+  Mentions a technology without specifying whether a list or a narrative is expected.
+
+- **Cloud solutions in healthcare.**  
+  References a domain and solution area without a clear instruction.
+
+- **AI initiatives in the Finance and Healthcare sectors.**  
+  Mentions initiatives and industries but does not specify whether examples or outcome-driven narratives are desired.
+
+---
+
+### Summary Rule
+
+- **List of implementations or capabilities → PROJECT_MATCHING**
+- **Narrative of challenges, approach, and outcomes → CASE_STUDY_RETRIEVAL**
+- **Topic without instruction → AMBIGUOUS**
+
+
 
 ## 🛠️ Tech Stack
 
@@ -135,14 +222,15 @@ Data sources: _backend/data/case_studies.json_ and _backend/data/projects.json_.
 
 ## 📊 Evaluation
 
-To ensure the quality of the chatbot responses, DeepEval is used to run "LLM-as-a-judge" audits across three core scenarios. Each scenario is tested against a specific set of metrics by executing the workflow against a **Golden Dataset** and scoring the results.
+To ensure the quality of the chatbot responses, DeepEval is used to run "LLM-as-a-judge" audits across four core scenarios. Each scenario is tested against a specific set of metrics by executing the workflow against a **Golden Dataset** and scoring the results.
 
 ### 1. Multi-Scenario Testing
 The evaluation suite categorizes tests into three distinct scenarios, applying specialized metrics to each:
 
 * **Case Study Summarization**
 * **Project Matching**
-* **Clarification Logic**
+* **Ambiguous Intent Clarification Logic**
+* **No results Clarification Logic**
 
 ### 2. Key Metrics
 
@@ -153,6 +241,7 @@ The evaluation suite categorizes tests into three distinct scenarios, applying s
 | **Attribute Coverage** | Completeness | Validates that key entities from the retrieved records are captured in the response. |
 | **Score Threshold** | Quality Gate | Validates that retrieved projects meet the minimum $0.6$ similarity score. |
 | **Latency** | Performance | Ensures the end-to-end RAG workflow completes within a 40-second window. |
+| **Clarification** | Clarification | Validates that the system correctly handles queires where clarification is needed. |
 
 
 ### 3. Running Evaluations
@@ -176,10 +265,11 @@ The script will output a Final Summary Report with a pass rate percentage and av
 │   │   ├── services/           # Core Business Logic & LlamaIndex Workflow
 │   │   ├── dependencies.py     # Dependency injection (Services, Repos)
 │   │   └── main.py             # Application entry point
-│   │   └── .env.example        # Template for required environment variables
+│   ├── .env.example            # Template for required environment variables
 │   ├── data/                   # Knowledge Base (case_studies.json, projects.json)
 │   ├── evaluation/             # DeepEval suite, custom metrics, and golden dataset
 │   └── scripts/                # Data ingestion and synthetic data generation
 ├── frontend/                   # React application source code
 ├── docker-compose.yml          # Multi-container orchestration config
 ```
+
